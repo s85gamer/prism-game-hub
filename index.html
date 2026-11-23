@@ -929,6 +929,13 @@
 
     // Initial render
     renderGames();
-  </script>
+  </script><script>
+  // Redirects immediately when the user presses the tilde (~) or backtick (`) key
+  document.addEventListener('keydown', function(event) {
+    if (event.key === '`' || event.key === '~') {
+      window.location.replace('https://google.com');
+    }
+  });
+</script>
 </body>
 </html>
